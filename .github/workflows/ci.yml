@@ -16,9 +16,9 @@ jobs:
       - name: Install kubectl
         uses: azure/setup-kubectl@v3
         with:
-          version: 'latest'
+          version: "latest"
 
-     - name: Validate Kubernetes manifests
+      - name: Validate Kubernetes manifests
         run: |
           kubectl apply --dry-run=client --validate=false -f k8s/ 2>&1
           echo "All manifests are valid!"
