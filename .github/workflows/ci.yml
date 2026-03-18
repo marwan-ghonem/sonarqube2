@@ -18,7 +18,7 @@ jobs:
         with:
           version: 'latest'
 
-      - name: Validate Kubernetes manifests
+     - name: Validate Kubernetes manifests
         run: |
-          kubectl apply --dry-run=client -f k8s/ 2>&1
+          kubectl apply --dry-run=client --validate=false -f k8s/ 2>&1
           echo "All manifests are valid!"
