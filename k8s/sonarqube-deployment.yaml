@@ -46,8 +46,8 @@ spec:
               mountPath: /opt/sonarqube/data
           resources:
             requests:
-              memory: "1Gi"
-              cpu: "500m"
+              memory: "512Mi"
+              cpu: "200m"
             limits:
               memory: "3Gi"
               cpu: "2000m"
