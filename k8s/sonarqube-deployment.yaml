@@ -13,8 +13,8 @@ spec:
       labels:
         app: sonarqube
     spec:
-    nodeSelector:
-        cloud.google.com/gke-nodepool: app-16 
+      nodeSelector:
+        cloud.google.com/gke-nodepool: app-16
       securityContext:
         fsGroup: 1000
       initContainers:
