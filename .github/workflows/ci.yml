@@ -22,4 +22,4 @@ jobs:
       - name: Validate Kubernetes manifests
         run: |
           kubeval --ignore-missing-schemas k8s/*.yaml
-          echo "All manifests are valid! 123"
+          echo "All manifests are valid!"
